@@ -4,6 +4,8 @@ import re
 import scipy
 from scipy.fft import fft
 
+## SELECT FROM HERE
+
 # ------------- Check the size of a text change, 
 # Note: Should be applied to column "text_change"
 
@@ -229,24 +231,26 @@ def apply_fft_feats(df):
 ##### MAKE SURE FUNC LIST IS UPDATED BEFORE RUNNING/PASTING TO NOTEBOOK #####
 func_list = [raw_aggregation_functions, apply_fft_feats]
 
-def create_examples(func_list=func_list, output_path=None):
 
-    input_data_path = '../data'
+## END SELECTION HERE
+
+def create_examples(func_list=func_list, input_path='../data', output_file=None):
+
     # Load the training data
-    train_logs = pd.read_csv(f'{input_data_path}/train_logs.csv')
+    train_logs = pd.read_csv(f'{input_path}/train_logs.csv')
 
     # Create features
     features = pd.concat([func(train_logs) for func in func_list], axis=1)
 
     # Merge scores and return df
-    train_scores = pd.read_csv(f'{input_data_path}/train_scores.csv')
+    train_scores = pd.read_csv(f'{input_path}/train_scores.csv')
     df = pd.merge(features, train_scores, on='id')
 
     # Save to file if output path is not None
-    if output_path is not None:
+    if output_file is not None:
         # Is output path a string
-        if isinstance(output_path, str):
-            df.to_csv(output_path)
+        if isinstance(output_file, str):
+            df.to_csv(output_file, index=False)
         else:
             print('Output path must be a string, not saving to file')
     return df
