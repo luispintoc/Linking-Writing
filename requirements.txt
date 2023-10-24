@@ -4,3 +4,4 @@ scikit-learn
 matplotlib
 ipykernel
 scipy
+scikit-image
