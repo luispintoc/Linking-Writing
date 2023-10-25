@@ -166,3 +166,6 @@ cython_debug/
 open.bat
 close.bat
 data/train_cursor.csv
+
+X_train.csv
+y_train.csv
