@@ -1,4 +1,5 @@
 data/train_logs.csv
+data/train_cursor.csv
 
 
 # Byte-compiled / optimized / DLL files
@@ -169,3 +170,4 @@ data/train_cursor.csv
 
 X_train.csv
 y_train.csv
+data/train_cursor.csv
