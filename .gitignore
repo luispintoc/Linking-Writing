@@ -1,5 +1,6 @@
 data/train_logs.csv
-
+data/train_cursor.csv
+kaggle feat_eng/train_logs_corrected.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -169,3 +170,4 @@ data/train_cursor.csv
 
 X_train.csv
 y_train.csv
+data/train_cursor.csv
