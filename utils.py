@@ -30,6 +30,7 @@ import copy
 from typing import List, Tuple, Dict
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 
+<<<<<<< HEAD
 
 def add_identity(axes, *line_args, **line_kwargs):
     identity, = axes.plot([], [], *line_args, **line_kwargs)
@@ -44,6 +45,8 @@ def add_identity(axes, *line_args, **line_kwargs):
     axes.callbacks.connect('ylim_changed', callback)
     return axes
 
+=======
+>>>>>>> 6d657ea7fd8afd0ae5180f5f245fc45f9a137de9
 '''
 Reconstruction
 '''
