@@ -2,6 +2,11 @@ data/train_logs.csv
 data/train_cursor.csv
 kaggle feat_eng/train_logs_corrected.csv
 *.txt
+*train_logs*
+*train_cursor*
+*catboost_info*
+*.model
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
