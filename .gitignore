@@ -7,6 +7,7 @@ kaggle feat_eng/train_logs_corrected.csv
 *catboost_info*
 *.model
 *.csv
+*.h5
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
